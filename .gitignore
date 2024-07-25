@@ -3,6 +3,7 @@
 logs/
 pstats
 data/
+wandb/
 profile.pstats
 catanatron-venv
 .DS_Store

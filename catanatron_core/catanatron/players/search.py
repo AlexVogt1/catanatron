@@ -15,6 +15,7 @@ class VictoryPointPlayer(Player):
     """
 
     def decide(self, game: Game, playable_actions):
+        # print(playable_actions)
         if len(playable_actions) == 1:
             return playable_actions[0]
 
