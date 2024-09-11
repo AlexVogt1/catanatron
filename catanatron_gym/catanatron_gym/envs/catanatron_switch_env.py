@@ -1,7 +1,9 @@
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
-
+from collections import Counter
+import time
+from catanatron.json import GameEncoder
 from catanatron.game import Game, TURNS_LIMIT
 from catanatron.models.player import Color, Player, RandomPlayer
 from catanatron.players.weighted_random import (
@@ -12,7 +14,8 @@ from catanatron.players.weighted_random import (
     DevCardRandomPlayer, 
     DoNothingRandomPlayer
 )
-
+from pprint import pprint
+from catanatron_server.utils import ensure_link, open_link
 from catanatron.models.map import BASE_MAP_TEMPLATE, NUM_NODES, LandTile, build_map
 from catanatron.models.enums import RESOURCES, Action, ActionType
 from catanatron.models.board import get_edges
@@ -29,6 +32,8 @@ from catanatron_gym.board_tensor_features import (
 # policy switching imports
 # from catanatron_gym.policy_wrapper import PolicyWrapper
 from typing import Literal, List, Final
+import selenium
+from selenium import webdriver
 
 COLOR_TO_RICH_STYLE = {
     Color.RED: "red",
@@ -143,15 +148,40 @@ NUM_FEATURES = len(FEATURES)
 HIGH = 19 * 5
 
 def victory_point_reward(game,p0_color):
-    pass
+    p0_vp = game.state.player_state['P0_VICTORY_POINTS']
+    if p0_color == game.winning_color():
+        return p0_vp + 10
+    else:
+        return p0_vp
+
 def simple_reward(game, p0_color):
     winning_color = game.winning_color()
     if p0_color == winning_color:
-        return 100
+        return 1
     elif winning_color is None:
         return 0
     else:
-        return -100
+        return -1
+    
+def complex_reward(game, p0_color):
+    p0_vp = game.state.player_state["P0_VICTORY_POINTS"]
+    has_road = 0
+    if game.state.player_state["P0_HAS_ROAD"]:
+        has_road = 1
+    has_army = 0
+    if game.state.player_state["P0_HAS_ARMY"]:
+        has_army = 1
+    winning_color = game.winning_color()
+    # step_rewards = step_reward(game,p0_color)
+    reward =0
+    reward = p0_vp #+ has_road + has_army #+ step_rewards
+    # print(p0_vp , has_road , has_army)
+    if p0_color == winning_color:
+        return 1
+    elif winning_color is None:
+        return reward*0.0001
+    else:
+        return -1
 
 RandomPlayer_list = [CityRandomPlayer(Color.BLUE),
                          SettlementRandomPlayer(Color.BLUE),
@@ -166,10 +196,10 @@ class PolicyWrapper:
     
     def get_policy_action(self,chosen_policy: int, valid_actions):
          policy:Player = self.play_style_list[chosen_policy]
-        #  print(policy)
+        #  print(rich_player_name(policy))
          action = policy.decide(game=self.game, playable_actions=valid_actions)
-         print(action)
-        #  return action
+        #  print(action)
+         return action
     
     def get_num_policies(self):
         return len(self.play_style_list)
@@ -179,9 +209,14 @@ class CatanatronSwitchEnv(gym.Env):
     observation_space = spaces.Box(low=0, high=HIGH, shape=(NUM_FEATURES,), dtype=float)
     
     # action_space = spaces.Discrete(wrapped_policies.get_num_policies())
+    reward_range = (-1, 1)
+
 
     def __init__(self, config=None):
+        print("running switch env")
         self.config = config or dict()
+        print(config)
+        # self.render_mode = self.config['render_mode']
         self.invalid_action_reward = self.config.get("invalid_action_reward", -1)
         self.reward_function = self.config.get("reward_function", simple_reward)
         self.map_type = self.config.get("map_type", "BASE")
@@ -196,7 +231,8 @@ class CatanatronSwitchEnv(gym.Env):
         self.representation = "mixed" if self.representation == "mixed" else "vector"
         self.features = get_feature_ordering(len(self.players), self.map_type)
         self.invalid_actions_count = 0
-        self.max_invalid_actions = 1000
+        self.max_invalid_actions = 10
+        self.actions_played =[]
 
         # TODO: Make self.action_space smaller if possible (per map_type)
         self.action_space = spaces.Discrete(ACTION_SPACE_SIZE)
@@ -247,16 +283,28 @@ class CatanatronSwitchEnv(gym.Env):
         Input: 
             int: integer of which policy is used to choose the action from list of policies (i.e. action is index)
         """
+        # self.actions_played.append(action)
         chosen_policy = action
-        print(chosen_policy)
+        # print(chosen_policy)
         #get valid catan actions
-        print(rich_player_name(self.p0))
+        # print(rich_player_name(self.p0))
         valid_catan_actions = self.game.state.playable_actions
+        # print(f"valid catan actions{valid_catan_actions}")
+        # print(f"playable actions{self.get_valid_actions()}")
         #get chosen action from chosen policy given the valid actions
-        policy_action = self.wrapped_policies.get_policy_action(chosen_policy=chosen_policy, valid_actions= valid_catan_actions)
-        print(policy_action)
+        # policy_action = self.wrapped_policies.get_policy_action(chosen_policy=chosen_policy, valid_actions= valid_catan_actions)
+        # print(f"policy action:{policy_action}")
+        # catan_action = to_action_space(policy_action, self.game.state.playable_actions)
+
         try:
-            catan_action = from_action_space(policy_action, self.game.state.playable_actions)
+            #get chosen action from chosen policy given the valid actions
+            policy_action = self.wrapped_policies.get_policy_action(chosen_policy=chosen_policy, valid_actions= valid_catan_actions)
+            # print(f"policy action:{policy_action}")
+            # catan_action = from_action_space(policy_action, self.game.state.playable_actions)# int -> Action
+            catan_action = to_action_space(policy_action)
+            # print(catan_action)
+            catan_action = policy_action
+            # print(catan_action)
         except Exception as e:
             # print("exception")
             self.invalid_actions_count += 0.1
@@ -279,7 +327,8 @@ class CatanatronSwitchEnv(gym.Env):
         self._advance_until_p0_decision()
 
         observation = self._get_observation()
-        info = dict(valid_actions=self.get_valid_actions())
+        info = self._get_info()
+        info["valid_actions"] = dict(valid_actions=self.get_valid_actions())
 
         winning_color = self.game.winning_color()
         terminated = winning_color is not None
@@ -287,8 +336,6 @@ class CatanatronSwitchEnv(gym.Env):
         reward = self.reward_function(self.game, self.p0.color)
 
         return observation, reward, terminated, truncated, info
-
-        pass
 
     def reset(
         self,
@@ -306,6 +353,7 @@ class CatanatronSwitchEnv(gym.Env):
             catan_map=catan_map,
             vps_to_win=self.vps_to_win,
         )
+        self.actions_played = []
         self.invalid_actions_count = 0
 
         self._advance_until_p0_decision()
@@ -332,3 +380,46 @@ class CatanatronSwitchEnv(gym.Env):
             and self.game.state.current_color() != self.p0.color
         ):
             self.game.play_tick()
+    
+    def render(self):
+        print("in renderer")
+        driver = webdriver.Firefox(firefox_binary='/usr/bin/firefox')
+        # driver = webdriver.Chrome('/usr/bin/chrome')
+        print("set up driver")
+        open_link(self.unwrapped.game)
+        # game_json = GameEncoder().default(self.game)
+        # print(game_json)
+        pprint(self.game.id)
+        link = ensure_link(self.game)
+        print("ensured link")
+        driver.get(link)
+        print("got link")
+        print(driver.get_screenshot_as_png())
+        time.sleep(1)
+        try:
+            driver.close()
+        except selenium.common.exceptions.WebDriverException as e:
+            print("Exception closing browser. Did you close manually?")
+    
+    def _get_info(self) -> dict:
+        """
+        Returns: info about the game and player stats
+        """
+        game_stats = {"actions_count": len(self.actions_played),
+                      "num_turns": self.game.state.num_turns,
+                      "p0_winning": self.game.state.player_state['P0_ACTUAL_VICTORY_POINTS']>self.game.state.player_state['P1_ACTUAL_VICTORY_POINTS']}
+        p0_stats = {"p0_vp": self.game.state.player_state['P0_VICTORY_POINTS'],
+                    "p0_actual_vp": self.game.state.player_state['P0_ACTUAL_VICTORY_POINTS'],
+                    "p0_has_road": self.game.state.player_state['P0_HAS_ROAD'],
+                    "p0_has_army": self.game.state.player_state['P0_HAS_ARMY'],
+                    'p0_longest_road_length': self.game.state.player_state['P0_LONGEST_ROAD_LENGTH'],
+                    "p0_cities": 4 - self.game.state.player_state["P0_CITIES_AVAILABLE"],
+                    "p0_settlements":5 - self.game.state.player_state["P0_SETTLEMENTS_AVAILABLE"]}
+        p1_stats = {"p1_vp": self.game.state.player_state['P1_VICTORY_POINTS'],
+                    "p1_actual_vp": self.game.state.player_state['P1_ACTUAL_VICTORY_POINTS'],
+                    "p1_has_road": self.game.state.player_state['P1_HAS_ROAD'],
+                    "p1_has_army": self.game.state.player_state['P1_HAS_ARMY'],
+                    'p1_longest_road_length': self.game.state.player_state['P1_LONGEST_ROAD_LENGTH'],
+                    "p1_cities": 4 - self.game.state.player_state["P1_CITIES_AVAILABLE"],
+                    "p1_settlements":5 - self.game.state.player_state["P1_SETTLEMENTS_AVAILABLE"]}
+        return {"game_stats":game_stats, "p0_stats": p0_stats, "p1_stats": p1_stats,}# "all_actions_played": self.game.state.actions, 'obs': create_sample(self.game,self.p0.color)}

@@ -5,7 +5,7 @@ register(
     entry_point="catanatron_gym.envs:CatanatronEnv",
 )
 
-# register(
-#     id="catanatron-switch-v1",
-#     entry_point="catanatron_gym.envs:CatanatronSwitchEnv",
-# )
+register(
+    id="catanatron-switch-v1",
+    entry_point="catanatron_gym.envs:CatanatronSwitchEnv",
+)

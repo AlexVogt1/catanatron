@@ -68,7 +68,7 @@ WEIGHTS_FOR_DEV_CARD_PLAYER = {
 }
 
 WEIGHTS_FOR_DO_NOTHING_PLAYER = {
-    ActionType.BUILD_SETTLEMENT:0,
+    # ActionType.BUILD_SETTLEMENT:0,
     ActionType.END_TURN: 1000,
 }
 class TestDoNothingRandomPlayer(Player):
@@ -177,8 +177,7 @@ class DevCardRandomPlayer(Player):
         for action in playable_actions:
             weight = WEIGHTS_FOR_DEV_CARD_PLAYER.get(action.action_type, 1)
             bloated_actions.extend([action] * weight)
-        print("bloadt actions",bloated_actions)
-        print(len(bloated_actions))
+
         return random.choice(bloated_actions)
 
 class DoNothingRandomPlayer(Player):

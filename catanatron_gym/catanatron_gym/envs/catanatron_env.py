@@ -111,6 +111,68 @@ NUM_FEATURES = len(FEATURES)
 # Highest features is NUM_RESOURCES_IN_HAND which in theory is all resource cards
 HIGH = 19 * 5
 
+def step_reward(game,p0_color):# nump turns in games are in hundreds. So num_turns/100 gives decimal reward
+    step_reward = float(game.state.num_turns/1000)
+    return float(-1.0*step_reward)
+
+def city_reward(game,p0_color):
+    p0_vp = game.state.player_state["P0_VICTORY_POINTS"]
+    cities_left= game.state.player_state["P0_CITIES_AVAILABLE"]
+    cities_built = 4 - cities_left
+    reward = p0_vp + cities_built
+    winning_color = game.winning_color()
+    if p0_color == winning_color:
+        return reward + 10
+    elif winning_color is None:
+        return reward
+    else:
+        return reward - 10
+    
+def settlement_reward(game, p0_color):
+    p0_vp = game.state.player_state["P0_VICTORY_POINTS"]
+    settlements_left= game.state.player_state["P0_SETTLEMENTS_AVAILABLE"]
+    settlements_built = 5 - settlements_left
+    reward = p0_vp + settlements_built
+    winning_color = game.winning_color()
+    if p0_color == winning_color:
+        return reward + 10
+    elif winning_color is None:
+        return reward
+    else:
+        return reward - 10
+
+def longest_road_reward(game, p0_color):
+    p0_vp = game.state.player_state["P0_VICTORY_POINTS"]
+    settlements_left= game.state.player_state["P0_SETTLEMENTS_AVAILABLE"]
+    settlements_built = 5 - settlements_left
+    reward = p0_vp + settlements_built
+    winning_color = game.winning_color()
+    if p0_color == winning_color:
+        return reward + 10
+    elif winning_color is None:
+        return reward
+    else:
+        return reward - 10
+
+def complex_reward(game, p0_color):
+    p0_vp = game.state.player_state["P0_VICTORY_POINTS"]
+    has_road = 0
+    if game.state.player_state["P0_HAS_ROAD"]:
+        has_road = 1
+    has_army = 0
+    if game.state.player_state["P0_HAS_ARMY"]:
+        has_army = 1
+    winning_color = game.winning_color()
+    step_rewards = step_reward(game,p0_color)
+    reward = p0_vp + has_road + has_army #+ step_rewards
+    if p0_color == winning_color:
+        return (reward + 10)/1000 
+    elif winning_color is None:
+        return (reward)/1000 
+    else:
+        return (reward - 10)/1000 
+
+    
 
 def simple_reward(game, p0_color):
     winning_color = game.winning_color()
@@ -132,6 +194,7 @@ class CatanatronEnv(gym.Env):
 
     def __init__(self, config=None):
         self.config = config or dict()
+        print(config)
         self.invalid_action_reward = self.config.get("invalid_action_reward", -1)
         self.reward_function = self.config.get("reward_function", simple_reward)
         self.map_type = self.config.get("map_type", "BASE")

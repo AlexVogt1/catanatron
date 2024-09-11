@@ -2,16 +2,51 @@ import gymnasium as gym
 import numpy as np
 import json
 import wandb
+import argparse
 from catanatron.players.weighted_random import WeightedRandomPlayer
 from catanatron.players.search import VictoryPointPlayer
 from catanatron.models.player import Color, Player, RandomPlayer
 from sb3_contrib.common.maskable.policies import MaskableActorCriticPolicy
+from catanatron_experimental.machine_learning.players.minimax import AlphaBetaPlayer
 from sb3_contrib.common.wrappers import ActionMasker
 from sb3_contrib.ppo_mask import MaskablePPO
 from stable_baselines3.common.callbacks import BaseCallback, EvalCallback, CheckpointCallback, CallbackList
 from wandb.integration.sb3 import WandbCallback
 from pathlib import Path
 import os
+from catanatron_gym.rewards import complex_reward, reward_function, settlement_reward,city_reward,longest_road_reward,dev_card_rewards
+
+def parse_args():
+    parser = argparse.ArgumentParser("Catanatron Switch Training")
+    parser.add_argument("--json_path", type=str, default="./experiment_json/baseline.json", help="directory for expeiment parameters")
+    
+
+    return parser.parse_args()
+
+
+def step_reward(game,p0_color):# nump turns in games are in hundreds. So num_turns/100 gives decimal reward
+    step_reward = float(game.state.num_turns / 1000)
+    return float(-1.0*step_reward)
+
+def complex_reward(game, p0_color):
+    p0_vp = game.state.player_state["P0_VICTORY_POINTS"]
+    has_road = 0
+    if game.state.player_state["P0_HAS_ROAD"]:
+        has_road = 1
+    has_army = 0
+    if game.state.player_state["P0_HAS_ARMY"]:
+        has_army = 1
+    winning_color = game.winning_color()
+    # step_rewards = step_reward(game,p0_color)
+    reward =0
+    reward = p0_vp #+ has_road + has_army #+ step_rewards
+    # print(p0_vp , has_road , has_army)
+    if p0_color == winning_color:
+        return 1
+    elif winning_color is None:
+        return reward*0.0001
+    else:
+        return -1
 
 def mask_fn(env) -> np.ndarray:
     valid_actions = env.get_valid_actions()
@@ -36,24 +71,47 @@ def main(config,log_dir):
         env_config["enemies"] = [WeightedRandomPlayer(Color.RED)]
     elif env_config["enemies"] == "victory_point":
         env_config["enemies"] = [VictoryPointPlayer(Color.RED)]
+    elif env_config["enemies"] == "alphabeta":
+        env_config["enemies"] = [AlphaBetaPlayer(Color.RED)]
     else:
-        env_config["enemies"] = None
+        catan_env_config["enemies"] = [RandomPlayer(Color.RED)]
     
     if env_config["reward_function"]== "simple":
         env_config["reward_function"] = None
+    elif env_config["reward_function"] == "complex":
+        catan_env_config["reward_function"] = complex_reward
+    elif env_config["reward_function"]== "other_complex":
+        catan_env_config["reward_function"] = reward_function
+    elif env_config["reward_function"]== "settlement":
+        catan_env_config["reward_function"] = settlement_reward
+    elif env_config["reward_function"]== "city":
+        catan_env_config["reward_function"] = city_reward
+    elif env_config["reward_function"]== "longest_road":
+        catan_env_config["reward_function"] = longest_road_reward
+    elif env_config["reward_function"]== "dev_card":
+        catan_env_config["reward_function"] = dev_card_rewards
 
     if env_config["representation"]== "vector":
         catan_env_config["representation"] = 'vector'
+    # catan_env_config['seed'] = env_config["seed"]
+    
     # Init Environment and Model
     env = gym.make("catanatron_gym:catanatron-v1",config = catan_env_config)
     env = ActionMasker(env, mask_fn)  # Wrap to enable masking
 
     print(env.observation_space)
     #Setup Model
-    model = MaskablePPO(policy=MaskableActorCriticPolicy, env= env,batch_size=ppo_params['batch_size'], verbose=1, device=ppo_params['device'], tensorboard_log=log_dir)
+    model = MaskablePPO(policy=MaskableActorCriticPolicy, 
+                        env= env,
+                        learning_rate=ppo_hyperparameters["learning_rate"],
+                        batch_size=ppo_params['batch_size'], 
+                        verbose=1, 
+                        device=ppo_params['device'], 
+                        tensorboard_log=log_dir,
+                        policy_kwargs=ppo_params["policy_kwargs"])
 
     # Setup Callbacks
-    eval_callback = EvalCallback(env, best_model_save_path=model_path, log_path=log_dir, eval_freq=1000,deterministic=True,verbose=1,render=False) 
+    eval_callback = EvalCallback(env, best_model_save_path=model_path, log_path=log_dir, eval_freq=1000,deterministic=False,verbose=1,render=False) 
     checkpoint_callback= CheckpointCallback(save_freq=10000, save_path=model_path,name_prefix='latest_model',verbose=2)
     callback = CallbackList([checkpoint_callback,eval_callback])
     wandb_callback = WandbCallback(verbose=1, model_save_path=log_dir, model_save_freq=5000)  
@@ -63,10 +121,10 @@ def main(config,log_dir):
     model.learn(total_timesteps=ppo_params['total_timesteps'],callback=callback)
 
 if __name__ == '__main__':
-
+    args = parse_args()
     # Load hyperparameters from JSON file
     #TODO: make json readable from args
-    with open('experiment_json/baseline.json', 'r') as f:
+    with open(f"{args.json_path}.json", 'r') as f:
         config = json.load(f)
 
     # Extract environment parameters and hyperparameters
