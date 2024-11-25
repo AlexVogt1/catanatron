@@ -1,0 +1,6 @@
+{
+    "approach": "empirical",
+    "group": "group_3",
+    "n_samples": 50,
+    "n_batches": 2
+}

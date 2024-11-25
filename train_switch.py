@@ -43,7 +43,7 @@ def main(config,log_dir):
     # Make Model dir
     model_path = os.path.join(log_dir, config["experiment_info"]["experiment_id"])
     #best model path
-
+    catan_env_config["map_type"] = env_config["map_type"]
     # process json env config for gym env config
     if env_config["enemies"] == "weighted_random":
         catan_env_config["enemies"] = [WeightedRandomPlayer(Color.RED)]
@@ -78,7 +78,7 @@ def main(config,log_dir):
     # Init Environment and Model
     env = gym.make("catanatron_gym:catanatron-switch-v1",config = catan_env_config)
     # env = make_vec_env("catanatron_gym:catanatron-switch-v1",config = catan_env_config)
-
+    print(env.unwrapped.game)
     # env = ActionMasker(env, mask_fn)  # Wrap to enable masking
 
     print(env.observation_space)
@@ -96,7 +96,7 @@ def main(config,log_dir):
                         )
 
     # Setup Callbacks
-    eval_callback = EvalCallback(env, best_model_save_path=model_path, log_path=model_path, eval_freq=1000,deterministic=False,verbose=1,render=False) 
+    eval_callback = EvalCallback(env, best_model_save_path=model_path, log_path=model_path, eval_freq=1000,deterministic=True,verbose=1,render=False) 
     checkpoint_callback= CheckpointCallback(save_freq=10000, save_path=model_path,name_prefix='latest_model',verbose=2)
     callback = CallbackList([checkpoint_callback,eval_callback])
     wandb_callback = WandbCallback(verbose=1, model_save_path=log_dir, model_save_freq=5000)  

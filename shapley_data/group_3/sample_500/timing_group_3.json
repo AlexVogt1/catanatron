@@ -1,0 +1,10 @@
+{
+    "init_time": "2024-09-16 08:18:00",
+    "total_time_secs": 603.214207,
+    "timing_secs": {
+        "setup": 0.785578,
+        "test_prediction": 0.010631,
+        "compute_vS": 602.413452,
+        "shapley_computation": 0.004546
+    }
+}

@@ -8,6 +8,7 @@ from catanatron_gym.features import create_sample_vector, create_sample
 from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 import json
+import ast
 
 from catanatron.players.search import VictoryPointPlayer
 from catanatron_gym.envs.catanatron_env import from_action_space
@@ -36,6 +37,7 @@ import shap.shap
 from torch.autograd import Variable
 import os
 import re
+import argparse
 from rpy2.robjects.vectors import StrVector, ListVector
 from rpy2.rinterface import NULL, NA
 
@@ -153,8 +155,14 @@ def get_group(features, group):
     # }
     bank_features = re.compile(".*BANK")
     edge_features = re.compile(".*EDGE")
+    P0_roads = re.compile(r'EDGE\([0-9]+,\s+[0-9]+\)_P0_ROAD')
+    P1_roads = re.compile(r'EDGE\([0-9]+,\s+[0-9]+\)_P1_ROAD')
     tile_features = re.compile(".*TILE")
     node_features = re.compile(".*NODE")
+    P0_settlements = re.compile(r'NODE[A-Za-z0-9_]+_P0_SETTLEMENT')
+    P1_settlements = re.compile(r'NODE[A-Za-z0-9_]+_P1_SETTLEMENT')
+    P0_cities = re.compile(r'NODE[A-Za-z0-9_]+_P0_CITY')
+    P1_cities = re.compile(r'NODE[A-Za-z0-9_]+_P1_CITY')
     port_features = re.compile(".*PORT")
     rolled_robber_features = re.compile("(.*IS_DISCARDING)|(.*IS_MOVING_ROBBER)")
     rolled_feature = re.compile(".*HAS_ROLLED")
@@ -169,7 +177,7 @@ def get_group(features, group):
     p0_pieces= re.compile(r'P0_[A-Za-z0-9_]+_LEFT')
     p1_pieces= re.compile(r'P1_[A-Za-z0-9_]+_LEFT')
     p0_devs_played = re.compile(r'P0_[A-Za-z0-9_]+_PLAYED$')
-    p1_devs_played = re.compile(r'P1_[A-Za-z0-9_]+_PLAYED')
+    p1_devs_played = re.compile(r'P1_[A-Za-z0-9_]+_PLAYED$')
     p1_public_vps = re.compile(r'P1_PUBLIC_VPS')
     p0_longest_road_length = re.compile(r'P0_LONGEST_ROAD_LENGTH')
     p1_longest_road_length = re.compile(r'P1_LONGEST_ROAD_LENGTH')
@@ -177,8 +185,14 @@ def get_group(features, group):
 
     bank_features =list(filter(bank_features.match, features))
     edge_features =list(filter(edge_features.match, features))
+    p0_road_features = list(filter(P0_roads.match, features))
+    p1_road_features = list(filter(P1_roads.match, features))
     tile_features =list(filter(tile_features.match, features))
     node_features=list(filter(node_features.match, features))
+    P0_settlement_features= list(filter(P0_settlements.match, features))
+    P1_settlement_features= list(filter(P1_settlements.match, features))
+    P0_city_features= list(filter(P0_cities.match, features))
+    P1_city_features= list(filter(P1_cities.match, features))
     port_features=list(filter(port_features.match, features))
     rolled_robber_features=list(filter(rolled_robber_features.match, features))
     rolled_feature=list(filter(rolled_feature.match, features))
@@ -248,22 +262,57 @@ def get_group(features, group):
             'p1_vps': p1_public_vps + p1_has_army + p1_has_road + p1_hand + p1_pieces +p1_longest_road_length + p1_devs_played
         }
         return group_3
+    elif group == "small_strat":
+        small_strat_group ={
+            "bank": bank_features,
+            "p0_roads": p0_road_features + p0_longest_road_length + p0_has_road, 
+            "p1_roads": p1_road_features + p1_longest_road_length + p1_has_road,
+            "tile_features": tile_features + port_features,
+            "p0_settlements": P0_settlement_features,
+            "p1_settlements": P1_settlement_features,
+            "p0_cities": P0_city_features,
+            "p1_cities": P1_city_features,
+            "rolled_robber_features": rolled_robber_features,
+            "rolled_feature": rolled_feature,
+            "p0_vps": p0_vps+p0_has_army,
+            "p1_public_vps": p1_public_vps + p1_has_army,
+            "p0_pieces_and_hand": p0_pieces+p0_hand,
+            "p1_pieces_and_hand":p1_pieces+p1_hand,
+            "p0_devs_played":p0_devs_played+p0_played_dev_in_turn,
+            "p1_devs_played": p1_devs_played,
+        }
+        return small_strat_group
     else:
         return None
 
 def prep_data(data:pd.DataFrame,features):
     data = data.copy()
     df = data[['obs','action']]
-    data_list =data.obs.tolist()
+    print(data[data.ep == 3])
+    data_list =df['obs'].apply(lambda x: x.strip("[]").split(", ")).tolist()
+    # data_list =df['obs'].apply(lambda x: ast.literal_eval(x))
+    # print("data list",data_list)
+    # print(len(data_list[0]))
     dfx = pd.DataFrame(data_list,columns=features ,index = data.index)
-    print(df)
+    dfx[features] = dfx[features].astype("float")
+    # dfx = 
+    print(dfx)
     #find len of final ep
-    #TODO find length of winning episode
+    #TODO find length of winning episode to use as the test
     # len(df[df.ep ==df.ep.max()])
-
-    dfx_train, dfx_test, dfy_train, dfy_test = train_test_split(dfx[features],df['action'],shuffle=False, test_size=len(data[data.ep ==data.ep.max()]))
-    #suffle the training data
+    # old split
+    dfx_train, dfx_test, dfy_train, dfy_test = train_test_split(dfx[features],df['action'],shuffle=False, test_size=len(data[data.ep == 8])) #ep=2 is game 6
+    # suffle the training data
+    
+    # new_split to include test in training
+    dfx_train = dfx[features]
+    dfy_train = df['action']
+    print(dfx_train)
+    test_indexes =data[data.ep == 3].index
+    dfx_test = dfx.loc[test_indexes]
+    print(dfx_test)
     dfx_train, dfy_train = shuffle(dfx_train,dfy_train, random_state=42)
+    #TODO: add dfx_test
     return dfx_train, dfx_test, dfy_train, dfy_test
 
 @torch.no_grad()
@@ -308,16 +357,50 @@ def shapley(env_config= None, agent_path = "./logs/Catan_Switch_Exp/exp_014/best
     # shap_values = explainer.shap_values(data,check_additivity=True)
 
     return shap_vals
+def get_games(games_dir = './good_games/'):
+    # def combine_csvs_into_dataframe(directory="./good_games/"):
+    # Initialize an empty list to store individual DataFrames
+    data_frames = []
+    
+    # Traverse directory, including all subdirectories
+    for root, _, files in os.walk(games_dir):
+        for file in files:
+            # Check if file name matches the naming scheme "episode_{ep}_data.csv"
+            if file.startswith("episode_") and file.endswith("_data.csv"):
+                try:
+                    # Attempt to extract the episode number from the file name
+                    ep = int(file.split("_")[1])
+                    if 0 <= ep <= 9:
+                        # Read the CSV file into a DataFrame
+                        file_path = os.path.join(root, file)
+                        df = pd.read_csv(file_path)
+                        # Add a new column to indicate the episode number
+                        df["episode"] = ep
+                        # Append the DataFrame to the list
+                        data_frames.append(df)
+                except ValueError:
+                    print(f"Skipping file {file} as it doesn't match the episode naming convention.")
+                    
+    # Concatenate all DataFrames into a single DataFrame
+    combined_df = pd.concat(data_frames, ignore_index=True)
+    
+    return combined_df
 
 @torch.no_grad()
-def groupshap(env_config= None, approach:str ="independence", grouping =None, agent_path = "./logs/Catan_Switch_Exp/exp_014/best_model.zip"):
+def groupshap(env_config= None, approach:str ="independence", grouping =None, agent_path = "./logs/Catan_Switch_Exp/exp_015/latest_model_1000000_steps.zip", nsamples=None,nbatches=None):
     print("using grad", torch.is_grad_enabled())
     data, info_list, catan_features = run_switch_agent(env_config=env_config, agent_path=agent_path)
     features = ["ep","step",'obs', 'action']
-    df = pd.DataFrame(data=data, columns=features)
+    # df = pd.DataFrame(data=data, columns=features)
+    
+    # print("first df",df)
     group = get_group(catan_features, grouping)
     # print(group)
-
+    df = get_games("./good_games/")
+    print("good games",df)
+    print(ast.literal_eval(df['obs'][0]))
+    #TODO: finish setting up the use of good games
+    # return
     #format data
     dfx_train, dfx_test, dfy_train, dfy_test = prep_data(df,catan_features)
     # print(dfx_train.dtypes)
@@ -362,8 +445,8 @@ def groupshap(env_config= None, approach:str ="independence", grouping =None, ag
         x_explain = dfx_test,
         approach = approach,
         # n_combinations=2**614,
-        n_samples=150,
-        n_batches=15,
+        n_samples=nsamples,
+        n_batches=nbatches,
         predict_model= lambda m,x: m.predict(x,deterministic =True)[0],
         prediction_zero = dfy_train.mean().item(),
         group=group,
@@ -394,24 +477,52 @@ def test_shap():
     )
     print(df_shapley)
 
+def check_dir_exists(dir_path):
+    if not os.path.exists(dir_path):
+        # If it doesn't exist, create it
+        os.makedirs(dir_path)
+
+def parse_args():
+    parser = argparse.ArgumentParser("Catanatron Switch Training")
+    parser.add_argument("--json_path", type=str, default="./experiments_cluster/test_exp.json", help="directory for expeiment parameters")
+    
+    return parser.parse_args()
+
 if __name__ == '__main__':
+    # get experiment parameters
+    args = parse_args()
+    # Load params from JSON file
+    with open(f"{args.json_path}.json", 'r') as f:
+        config = json.load(f)
+
+    group = config["group"]
+    n_samples = config["n_samples"]
+    n_batches = config["n_batches"]
+    results_dir = f"./shapley_data/{str(group)}/sample_{str(n_samples)}"
+    print(results_dir)
+    #create results dir if it does not exist
+    check_dir_exists(results_dir)
     config={"enemies": [AlphaBetaPlayer(Color.RED,depth=1)]}
     print("using grad", torch.is_grad_enabled())
     #normal shap
     # shap_vals = shapley(config)
     # np.save('./shapley_data/shapley_vals.npy', shap_vals)
     #group_shapley for group 3 (the smallest group) 
-    df_shapley, pred_explain, internal, timing, MSEv = groupshap(env_config=config, approach= 'empirical', grouping = "group_2")
-    df_shapley.to_csv(path_or_buf='./shapley_data/group_2/sample_200/groupshap_group_2.csv')
+    df_shapley, pred_explain, internal, timing, MSEv = groupshap(env_config=config, 
+                                                                 approach= 'empirical', 
+                                                                 grouping = group, 
+                                                                 nsamples = n_samples,
+                                                                 nbatches = n_batches)
+    df_shapley.to_csv(path_or_buf=f'{results_dir}/shapley_values_{str(group)}.csv')
     print("pred_explain is numpy with shape:",pred_explain.shape)
-    np.save(file ='./shapley_data/group_2/sample_200/pred_explain_group_2.npy',arr=pred_explain)
+    np.save(file =f'{results_dir}/pred_explain_{str(group)}.npy',arr=pred_explain)
     # print("internal is dict\n",internal)
     # with open("./shapley_data/internal_group_3.json", "w") as file:
     #     json.dump(internal,file,indent=4)   
     print("timing is dict:\n",timing)
-    with open("./shapley_data/group_2/sample_200/timing_group_2.json", "w") as file:
+    with open(f"{results_dir}/timing_{str(group)}.json", "w") as file:
         json.dump(timing,fp=file,indent=4)
     print("msev is dict:\n",MSEv)
-    with open("./shapley_data/group_2/sample_200/MSEv_group_2.json", "w") as file:
+    with open(f"{results_dir}/MSEv_{str(group)}.json", "w") as file:
         json.dump({'MSEv':MSEv["MSEv"].to_dict(orient='records'),"MSEv_explicand":MSEv["MSEv_explicand"].to_dict(orient='records')},fp =file, indent=4)
     
