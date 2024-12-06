@@ -1,0 +1,44 @@
+{
+    "experiment_info": {
+        "experiment_id": "exp_016",
+        "experiment_name": "Catan_Switch_Exp",
+        "description": "Switch Training using other complex and training for longer against value in TOURNAMENT",
+        "date": "31-07-2024"
+    },
+    "environment_parameters": {
+        "env": "catanatron_gym:catanatron-switch-v1",
+        "map_type": "TOURNAMENT",
+        "enemies": "value",
+        "reward_function": "other_complex",
+        "representation": "vector",
+        "seed": 42
+    },
+    "ppo_hyperparameters": {
+        "policy": "MlpPolicy",
+        "env": "catanatron_gym:catanatron-switch-v1",
+        "learning_rate": 3e-4,
+        "n_steps": 2048,
+        "batch_size": 64,
+        "n_epochs": 10,
+        "gamma": 0.99,
+        "gae_lambda": 0.95,
+        "clip_range": 0.2,
+        "clip_range_vf": null,
+        "ent_coef": 0.0,
+        "vf_coef": 0.5,
+        "max_grad_norm": 0.5,
+        "use_sde": false,
+        "sde_sample_freq": -1,
+        "target_kl": null,
+        "tensorboard_log": null,
+        "create_eval_env": false,
+        "policy_kwargs": {
+            "net_arch": [384, 128, 64]
+        },
+        "verbose": 1,
+        "seed": 42,
+        "device": "cuda",
+        "_init_setup_model": true,
+        "total_timesteps": 1e7
+    }
+  }

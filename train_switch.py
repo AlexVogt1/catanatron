@@ -8,6 +8,7 @@ from catanatron.players.weighted_random import WeightedRandomPlayer
 from catanatron.players.search import VictoryPointPlayer
 from catanatron.models.player import Color, Player, RandomPlayer
 from catanatron_experimental.machine_learning.players.minimax import AlphaBetaPlayer
+from catanatron_experimental.machine_learning.players.value import ValueFunctionPlayer
 from sb3_contrib.common.maskable.policies import MaskableActorCriticPolicy
 from sb3_contrib.common.wrappers import ActionMasker
 from sb3_contrib.ppo_mask import MaskablePPO
@@ -51,6 +52,8 @@ def main(config,log_dir):
         catan_env_config["enemies"] = [VictoryPointPlayer(Color.RED)]
     elif env_config["enemies"] == "alphabeta":
         env_config["enemies"] = [AlphaBetaPlayer(Color.RED)]
+    elif env_config["enemies"] == "value":
+        env_config["enemies"] = [ValueFunctionPlayer(Color.RED)]
     else:
         catan_env_config["enemies"] = [RandomPlayer(Color.RED)]
     

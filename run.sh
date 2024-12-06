@@ -12,7 +12,7 @@ group_3=("./experiments_cluser/g3s50" "./experiments_cluser/g3s100" "./experimen
 
 # source ~/.bashrc
 # cd ~/catan/catanatron
-conda activate catanatron
+# conda activate catanatron
 
 # for i in "${analysis_play_styles[@]}" 
 # do
@@ -29,7 +29,12 @@ conda activate catanatron
 #     echo "$i"
 #     python my_shap.py --json_path="$i" 
 # done
-python train_switch.py --json_path="./experiment_json/switch/exp_015"
+
+python train_switch.py --json_path="./experiment_json/switch/exp_020"
+python train_switch.py --json_path="./experiment_json/switch/exp_019"
+# python train_switch.py --json_path="./experiment_json/switch/exp_017"
+# python train_switch.py --json_path="./experiment_json/switch/exp_018"
+
 echo "------------------------------------------------------------------------"
 echo "Job ended on" `date`
 echo "------------------------------------------------------------------------"
