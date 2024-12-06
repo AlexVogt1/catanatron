@@ -33,7 +33,7 @@
         "tensorboard_log": null,
         "create_eval_env": false,
         "policy_kwargs": {
-            "net_arch": [64, 64]
+            "net_arch": [128, 64]
         },
         "verbose": 1,
         "seed": 42,
