@@ -2,5 +2,5 @@
     "approach": "empirical",
     "group": "group_3",
     "n_samples": 100,
-    "n_batches": null
+    "n_batches": 2
 }
