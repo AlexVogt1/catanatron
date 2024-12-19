@@ -1,0 +1,49 @@
+[
+    {
+        "game_stats": {
+            "actions_count": 0,
+            "num_turns": 485,
+            "p0_winning": false
+        },
+        "p0_stats": {
+            "p0_vp": 2,
+            "p0_actual_vp": 2,
+            "p0_has_road": false,
+            "p0_has_army": false,
+            "p0_longest_road_length": 2,
+            "p0_cities": 0,
+            "p0_settlements": 2
+        },
+        "p1_stats": {
+            "p1_vp": 8,
+            "p1_actual_vp": 11,
+            "p1_has_road": true,
+            "p1_has_army": true,
+            "p1_longest_road_length": 12,
+            "p1_cities": 0,
+            "p1_settlements": 4
+        },
+        "valid_actions": {
+            "valid_actions": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                17,
+                18,
+                19
+            ]
+        }
+    }
+]

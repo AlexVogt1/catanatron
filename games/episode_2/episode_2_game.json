@@ -1266,8 +1266,8 @@
                 1
             ],
             "direction": "NORTH",
-            "building": null,
-            "color": null
+            "building": "SETTLEMENT",
+            "color": "RED"
         },
         "3": {
             "id": 3,
@@ -1310,8 +1310,8 @@
                 -1
             ],
             "direction": "SOUTHWEST",
-            "building": "CITY",
-            "color": "RED"
+            "building": null,
+            "color": null
         },
         "7": {
             "id": 7,
@@ -1376,8 +1376,8 @@
                 2
             ],
             "direction": "NORTH",
-            "building": null,
-            "color": null
+            "building": "CITY",
+            "color": "RED"
         },
         "13": {
             "id": 13,
@@ -1387,8 +1387,8 @@
                 2
             ],
             "direction": "NORTHEAST",
-            "building": "SETTLEMENT",
-            "color": "RED"
+            "building": null,
+            "color": null
         },
         "14": {
             "id": 14,
@@ -1431,8 +1431,8 @@
                 0
             ],
             "direction": "SOUTHEAST",
-            "building": "CITY",
-            "color": "RED"
+            "building": null,
+            "color": null
         },
         "18": {
             "id": 18,
@@ -1453,8 +1453,8 @@
                 -2
             ],
             "direction": "SOUTHWEST",
-            "building": "SETTLEMENT",
-            "color": "RED"
+            "building": null,
+            "color": null
         },
         "20": {
             "id": 20,
@@ -1464,8 +1464,8 @@
                 -2
             ],
             "direction": "SOUTH",
-            "building": null,
-            "color": null
+            "building": "CITY",
+            "color": "BLUE"
         },
         "21": {
             "id": 21,
@@ -1486,8 +1486,8 @@
                 -2
             ],
             "direction": "SOUTHWEST",
-            "building": "CITY",
-            "color": "RED"
+            "building": null,
+            "color": null
         },
         "23": {
             "id": 23,
@@ -1508,8 +1508,8 @@
                 -1
             ],
             "direction": "SOUTHWEST",
-            "building": "SETTLEMENT",
-            "color": "BLUE"
+            "building": null,
+            "color": null
         },
         "25": {
             "id": 25,
@@ -1596,8 +1596,8 @@
                 3
             ],
             "direction": "NORTH",
-            "building": null,
-            "color": null
+            "building": "SETTLEMENT",
+            "color": "RED"
         },
         "33": {
             "id": 33,
@@ -1607,8 +1607,8 @@
                 3
             ],
             "direction": "NORTHEAST",
-            "building": "SETTLEMENT",
-            "color": "BLUE"
+            "building": null,
+            "color": null
         },
         "34": {
             "id": 34,
@@ -1695,8 +1695,8 @@
                 0
             ],
             "direction": "SOUTHEAST",
-            "building": null,
-            "color": null
+            "building": "SETTLEMENT",
+            "color": "RED"
         },
         "42": {
             "id": 42,
@@ -1750,8 +1750,8 @@
                 -3
             ],
             "direction": "SOUTH",
-            "building": null,
-            "color": null
+            "building": "CITY",
+            "color": "BLUE"
         },
         "47": {
             "id": 47,
@@ -2318,7 +2318,7 @@
                 1
             ],
             "direction": "NORTHWEST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -2474,7 +2474,7 @@
                 2
             ],
             "direction": "NORTHEAST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -2487,7 +2487,7 @@
                 1
             ],
             "direction": "EAST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -2500,7 +2500,7 @@
                 2
             ],
             "direction": "NORTHWEST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -2526,7 +2526,7 @@
                 1
             ],
             "direction": "EAST",
-            "color": "RED"
+            "color": null
         },
         {
             "id": [
@@ -2552,7 +2552,7 @@
                 1
             ],
             "direction": "NORTHEAST",
-            "color": "RED"
+            "color": null
         },
         {
             "id": [
@@ -2630,7 +2630,7 @@
                 -2
             ],
             "direction": "SOUTHEAST",
-            "color": "RED"
+            "color": null
         },
         {
             "id": [
@@ -2643,7 +2643,7 @@
                 -2
             ],
             "direction": "SOUTHWEST",
-            "color": "RED"
+            "color": "BLUE"
         },
         {
             "id": [
@@ -2656,7 +2656,7 @@
                 -1
             ],
             "direction": "WEST",
-            "color": "RED"
+            "color": null
         },
         {
             "id": [
@@ -2669,7 +2669,7 @@
                 -2
             ],
             "direction": "SOUTHEAST",
-            "color": "RED"
+            "color": null
         },
         {
             "id": [
@@ -2682,7 +2682,7 @@
                 -2
             ],
             "direction": "SOUTHWEST",
-            "color": "RED"
+            "color": null
         },
         {
             "id": [
@@ -2747,7 +2747,7 @@
                 -1
             ],
             "direction": "SOUTHWEST",
-            "color": "BLUE"
+            "color": null
         },
         {
             "id": [
@@ -2799,7 +2799,7 @@
                 2
             ],
             "direction": "WEST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -2812,7 +2812,7 @@
                 3
             ],
             "direction": "NORTHWEST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -2825,7 +2825,7 @@
                 3
             ],
             "direction": "NORTHEAST",
-            "color": "BLUE"
+            "color": "RED"
         },
         {
             "id": [
@@ -2838,7 +2838,7 @@
                 2
             ],
             "direction": "EAST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -2851,7 +2851,7 @@
                 3
             ],
             "direction": "NORTHWEST",
-            "color": "BLUE"
+            "color": "RED"
         },
         {
             "id": [
@@ -2864,7 +2864,7 @@
                 3
             ],
             "direction": "NORTHEAST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -2955,7 +2955,7 @@
                 1
             ],
             "direction": "EAST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -2968,7 +2968,7 @@
                 0
             ],
             "direction": "SOUTHEAST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -2981,7 +2981,7 @@
                 1
             ],
             "direction": "NORTHEAST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -2994,7 +2994,7 @@
                 0
             ],
             "direction": "EAST",
-            "color": null
+            "color": "RED"
         },
         {
             "id": [
@@ -3072,7 +3072,7 @@
                 -2
             ],
             "direction": "WEST",
-            "color": null
+            "color": "BLUE"
         },
         {
             "id": [
@@ -4013,79 +4013,66 @@
     ],
     "actions": [
         [
-            "RED",
-            "BUILD_SETTLEMENT",
-            6
-        ],
-        [
-            "RED",
-            "BUILD_ROAD",
-            [
-                6,
-                23
-            ]
-        ],
-        [
             "BLUE",
             "BUILD_SETTLEMENT",
-            33
+            46
         ],
         [
             "BLUE",
             "BUILD_ROAD",
             [
-                32,
-                33
-            ]
-        ],
-        [
-            "BLUE",
-            "BUILD_SETTLEMENT",
-            24
-        ],
-        [
-            "BLUE",
-            "BUILD_ROAD",
-            [
-                24,
-                25
+                19,
+                46
             ]
         ],
         [
             "RED",
             "BUILD_SETTLEMENT",
-            13
+            41
         ],
         [
             "RED",
             "BUILD_ROAD",
             [
-                13,
-                14
+                39,
+                41
             ]
         ],
         [
             "RED",
+            "BUILD_SETTLEMENT",
+            32
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                31,
+                32
+            ]
+        ],
+        [
+            "BLUE",
+            "BUILD_SETTLEMENT",
+            20
+        ],
+        [
+            "BLUE",
+            "BUILD_ROAD",
+            [
+                19,
+                20
+            ]
+        ],
+        [
+            "BLUE",
             "ROLL",
             [
-                5,
+                2,
                 4
             ]
         ],
         [
-            "RED",
-            "END_TURN",
-            null
-        ],
-        [
-            "BLUE",
-            "ROLL",
-            [
-                6,
-                3
-            ]
-        ],
-        [
             "BLUE",
             "END_TURN",
             null
@@ -4095,7 +4082,7 @@
             "ROLL",
             [
                 6,
-                2
+                6
             ]
         ],
         [
@@ -4107,8 +4094,8 @@
             "BLUE",
             "ROLL",
             [
-                1,
-                2
+                3,
+                1
             ]
         ],
         [
@@ -4121,11 +4108,121 @@
             "ROLL",
             [
                 2,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                11,
+                32
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
                 5
             ]
         ],
         [
             "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "SHEEP",
+                "SHEEP",
+                "WHEAT",
+                "WOOD",
+                "WHEAT"
+            ]
+        ],
+        [
+            "BLUE",
             "MOVE_ROBBER",
             [
                 [
@@ -4133,29 +4230,8 @@
                     -2,
                     0
                 ],
-                "BLUE",
-                "WOOD"
-            ]
-        ],
-        [
-            "RED",
-            "BUILD_ROAD",
-            [
-                14,
-                15
-            ]
-        ],
-        [
-            "RED",
-            "END_TURN",
-            null
-        ],
-        [
-            "BLUE",
-            "ROLL",
-            [
-                6,
-                4
+                null,
+                null
             ]
         ],
         [
@@ -4167,16 +4243,34 @@
             "RED",
             "ROLL",
             [
-                6,
-                4
+                1,
+                2
             ]
         ],
         [
             "RED",
-            "BUILD_ROAD",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
             [
-                15,
-                17
+                4,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                2
             ]
         ],
         [
@@ -4201,8 +4295,261 @@
             "RED",
             "ROLL",
             [
+                1,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "ORE",
+                "SHEEP",
+                "SHEEP",
+                "WHEAT"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    0,
+                    2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
                 5,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "ORE"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
                 1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "ORE"
             ]
         ],
         [
@@ -4220,6 +4567,11 @@
         ],
         [
             "BLUE",
+            "BUILD_CITY",
+            46
+        ],
+        [
+            "BLUE",
             "END_TURN",
             null
         ],
@@ -4227,8 +4579,8 @@
             "RED",
             "ROLL",
             [
-                3,
-                1
+                5,
+                3
             ]
         ],
         [
@@ -4240,8 +4592,96 @@
             "BLUE",
             "ROLL",
             [
-                5,
-                1
+                4,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    0,
+                    -2,
+                    2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -1,
+                    2,
+                    -1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                4
             ]
         ],
         [
@@ -4267,24 +4707,347 @@
             "ROLL",
             [
                 3,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -1,
+                    -1,
+                    2
+                ],
+                "RED",
+                "ORE"
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
                 5
             ]
         ],
         [
             "BLUE",
+            "DISCARD",
+            [
+                "ORE",
+                "WOOD",
+                "WOOD",
+                "SHEEP",
+                "WOOD",
+                "WOOD",
+                "SHEEP",
+                "WOOD",
+                "WOOD",
+                "ORE",
+                "SHEEP",
+                "WOOD",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    0,
+                    -2,
+                    2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                5
+            ]
+        ],
+        [
+            "RED",
             "MARITIME_TRADE",
             [
                 "WOOD",
                 "WOOD",
                 null,
                 null,
-                "ORE"
+                "WHEAT"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                5
             ]
         ],
         [
             "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                3
+            ]
+        ],
+        [
+            "RED",
             "BUY_DEVELOPMENT_CARD",
             "KNIGHT"
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "PLAY_KNIGHT_CARD",
+            null
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    2,
+                    -1,
+                    -1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                4
+            ]
         ],
         [
             "BLUE",
@@ -4296,17 +5059,49 @@
             "ROLL",
             [
                 4,
-                3
+                2
             ]
         ],
         [
             "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                2
+            ]
+        ],
+        [
+            "BLUE",
             "DISCARD",
             [
-                "BRICK",
-                "SHEEP",
+                "WOOD",
+                "WOOD",
+                "WOOD",
+                "WOOD",
+                "WOOD",
                 "ORE",
-                "ORE"
+                "SHEEP",
+                "SHEEP",
+                "WOOD",
+                "SHEEP"
             ]
         ],
         [
@@ -4331,8 +5126,60 @@
             "BLUE",
             "ROLL",
             [
+                6,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
                 3,
-                1
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                3
             ]
         ],
         [
@@ -4345,7 +5192,796 @@
             "ROLL",
             [
                 2,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
                 4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "SHEEP",
+                "WOOD",
+                "ORE",
+                "WOOD",
+                "WOOD",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    0,
+                    2,
+                    -2
+                ],
+                "BLUE",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                30,
+                31
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "SHEEP",
+                "WOOD",
+                "SHEEP",
+                "WHEAT"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    0,
+                    -1,
+                    1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    2,
+                    -1,
+                    -1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    2,
+                    0,
+                    -2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "SHEEP",
+                "SHEEP",
+                "WOOD",
+                "WOOD",
+                "SHEEP",
+                "WOOD",
+                "WOOD",
+                "WOOD",
+                "ORE"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -1,
+                    0,
+                    1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WOOD",
+                "SHEEP",
+                "WOOD",
+                "WOOD",
+                "SHEEP"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    2,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    0,
+                    2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    1,
+                    -1,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WOOD",
+                "SHEEP",
+                "WHEAT",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    0,
+                    2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                11,
+                12
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                6
             ]
         ],
         [
@@ -4371,30 +6007,7 @@
             "ROLL",
             [
                 5,
-                2
-            ]
-        ],
-        [
-            "RED",
-            "DISCARD",
-            [
-                "WHEAT",
-                "ORE",
-                "SHEEP",
-                "SHEEP"
-            ]
-        ],
-        [
-            "RED",
-            "MOVE_ROBBER",
-            [
-                [
-                    2,
-                    -2,
-                    0
-                ],
-                "BLUE",
-                "SHEEP"
+                3
             ]
         ],
         [
@@ -4404,8 +6017,73 @@
         ],
         [
             "BLUE",
-            "PLAY_KNIGHT_CARD",
+            "ROLL",
+            [
+                2,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
             null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WOOD",
+                "WOOD",
+                "WOOD",
+                "WOOD"
+            ]
         ],
         [
             "BLUE",
@@ -4422,14 +6100,6 @@
         ],
         [
             "BLUE",
-            "ROLL",
-            [
-                6,
-                6
-            ]
-        ],
-        [
-            "BLUE",
             "END_TURN",
             null
         ],
@@ -4438,15 +6108,15 @@
             "ROLL",
             [
                 6,
-                2
+                5
             ]
         ],
         [
             "RED",
             "BUILD_ROAD",
             [
-                22,
-                23
+                29,
+                30
             ]
         ],
         [
@@ -4456,10 +6126,190 @@
         ],
         [
             "BLUE",
+            "ROLL",
+            [
+                6,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    2,
+                    -2,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    1,
+                    -1,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "WHEAT"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
             "ROLL",
             [
                 3,
-                1
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                2
             ]
         ],
         [
@@ -4471,8 +6321,34 @@
             "RED",
             "ROLL",
             [
-                5,
-                1
+                3,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                6
             ]
         ],
         [
@@ -4497,8 +6373,33 @@
             "RED",
             "ROLL",
             [
-                4,
+                6,
                 1
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WOOD",
+                "WOOD",
+                "WOOD",
+                "WHEAT",
+                "SHEEP",
+                "SHEEP"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    1,
+                    -1,
+                    0
+                ],
+                null,
+                null
             ]
         ],
         [
@@ -4510,7 +6411,105 @@
             "BLUE",
             "ROLL",
             [
-                5,
+                1,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "ORE",
+                "SHEEP",
+                "WOOD",
+                "WHEAT",
+                "SHEEP"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    1,
+                    1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "BRICK"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
                 4
             ]
         ],
@@ -4523,7 +6522,150 @@
             "RED",
             "ROLL",
             [
-                5,
+                2,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_SETTLEMENT",
+            12
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                38,
+                39
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
                 6
             ]
         ],
@@ -4536,31 +6678,8 @@
             "BLUE",
             "ROLL",
             [
-                5,
-                2
-            ]
-        ],
-        [
-            "RED",
-            "DISCARD",
-            [
-                "SHEEP",
-                "ORE",
-                "SHEEP",
-                "WHEAT"
-            ]
-        ],
-        [
-            "BLUE",
-            "MOVE_ROBBER",
-            [
-                [
-                    0,
-                    0,
-                    0
-                ],
-                null,
-                null
+                4,
+                4
             ]
         ],
         [
@@ -4585,8 +6704,137 @@
             "BLUE",
             "ROLL",
             [
-                2,
+                5,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WHEAT",
+                "ORE",
+                "WOOD",
+                "SHEEP",
+                "WOOD",
+                "WOOD",
+                "WHEAT",
+                "WOOD",
+                "SHEEP"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    1,
+                    1,
+                    -2
+                ],
+                "BLUE",
+                "WHEAT"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
                 5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "SHEEP",
+                "SHEEP",
+                "WHEAT",
+                "SHEEP"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    -1,
+                    2,
+                    -1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                1
             ]
         ],
         [
@@ -4595,7 +6843,810 @@
             [
                 [
                     0,
+                    0,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
                     1,
+                    -1,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                32,
+                33
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WOOD",
+                "WOOD",
+                "WOOD",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    2,
+                    -2,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    1,
+                    1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    0,
+                    2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "SHEEP"
+            ]
+        ],
+        [
+            "RED",
+            "BUY_DEVELOPMENT_CARD",
+            "VICTORY_POINT"
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "ORE",
+                "ORE",
+                "ORE",
+                "ORE",
+                "BRICK"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "BRICK",
+                "BRICK",
+                "BRICK",
+                "BRICK",
+                "WHEAT"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "SHEEP",
+                "SHEEP",
+                "WOOD",
+                "WOOD",
+                "WOOD",
+                "WOOD",
+                "SHEEP",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    0,
+                    1,
+                    -1
+                ],
+                "BLUE",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WOOD",
+                "WOOD",
+                "SHEEP",
+                "WOOD"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    0,
+                    -2,
+                    2
+                ],
+                "RED",
+                "WOOD"
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    1,
+                    0,
+                    -1
+                ],
+                "BLUE",
+                "SHEEP"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    1,
+                    -2,
+                    1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "BUY_DEVELOPMENT_CARD",
+            "ROAD_BUILDING"
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "PLAY_ROAD_BUILDING",
+            null
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                12,
+                13
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                33,
+                34
+            ]
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                41,
+                42
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    1,
+                    0,
                     -1
                 ],
                 null,
@@ -4612,7 +7663,7 @@
             "ROLL",
             [
                 5,
-                4
+                6
             ]
         ],
         [
@@ -4624,8 +7675,8 @@
             "BLUE",
             "ROLL",
             [
-                3,
-                1
+                6,
+                5
             ]
         ],
         [
@@ -4637,21 +7688,8 @@
             "RED",
             "ROLL",
             [
-                3,
-                4
-            ]
-        ],
-        [
-            "RED",
-            "MOVE_ROBBER",
-            [
-                [
-                    2,
-                    -2,
-                    0
-                ],
-                "BLUE",
-                "WHEAT"
+                6,
+                5
             ]
         ],
         [
@@ -4668,12 +7706,22 @@
             ]
         ],
         [
+            "RED",
+            "DISCARD",
+            [
+                "BRICK",
+                "SHEEP",
+                "ORE",
+                "ORE"
+            ]
+        ],
+        [
             "BLUE",
             "MOVE_ROBBER",
             [
                 [
-                    1,
-                    1,
+                    2,
+                    0,
                     -2
                 ],
                 null,
@@ -4689,7 +7737,49 @@
             "RED",
             "ROLL",
             [
-                1,
+                2,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                3,
+                12
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                2,
                 3
             ]
         ],
@@ -4703,18 +7793,93 @@
             "ROLL",
             [
                 2,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                17,
+                39
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
                 1
             ]
         ],
         [
             "BLUE",
-            "MARITIME_TRADE",
+            "DISCARD",
             [
+                "WOOD",
+                "WHEAT",
+                "WOOD",
+                "ORE",
                 "SHEEP",
-                "SHEEP",
-                "SHEEP",
-                "SHEEP",
-                "WOOD"
+                "WHEAT",
+                "ORE"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -1,
+                    0,
+                    1
+                ],
+                "RED",
+                "ORE"
             ]
         ],
         [
@@ -4727,13 +7892,889 @@
             "ROLL",
             [
                 3,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "WHEAT"
+            ]
+        ],
+        [
+            "RED",
+            "BUY_DEVELOPMENT_CARD",
+            "KNIGHT"
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "PLAY_KNIGHT_CARD",
+            null
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    1,
+                    0,
+                    -1
+                ],
+                "BLUE",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
                 2
             ]
         ],
         [
             "RED",
-            "BUILD_CITY",
-            6
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "ORE"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "SHEEP",
+                "WOOD",
+                "SHEEP",
+                "SHEEP",
+                "WOOD",
+                "ORE",
+                "SHEEP"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -1,
+                    1,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_ROAD",
+            [
+                13,
+                14
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WHEAT",
+                "WHEAT",
+                "WOOD",
+                "WOOD",
+                "WOOD",
+                "WOOD",
+                "WHEAT"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    2,
+                    0,
+                    -2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WOOD",
+                "WOOD",
+                "WHEAT",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    2,
+                    -2,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    0,
+                    2,
+                    -2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "ORE",
+                "ORE",
+                "ORE",
+                "ORE",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "ORE"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WOOD",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    0,
+                    2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "ORE"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WHEAT",
+                "ORE",
+                "ORE",
+                "WOOD"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -1,
+                    2,
+                    -1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    2,
+                    -1,
+                    -1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -1,
+                    0,
+                    1
+                ],
+                "RED",
+                "ORE"
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                2
+            ]
         ],
         [
             "RED",
@@ -4757,8 +8798,83 @@
             "RED",
             "ROLL",
             [
-                1,
-                6
+                6,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    1,
+                    -2,
+                    1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "DISCARD",
+            [
+                "SHEEP",
+                "BRICK",
+                "ORE",
+                "SHEEP"
             ]
         ],
         [
@@ -4767,10 +8883,143 @@
             [
                 [
                     2,
-                    -2,
-                    0
+                    0,
+                    -2
                 ],
-                "BLUE",
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -1,
+                    -1,
+                    2
+                ],
+                "RED",
+                "WOOD"
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "BUILD_CITY",
+            20
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
                 "WHEAT"
             ]
         ],
@@ -4783,8 +9032,72 @@
             "BLUE",
             "ROLL",
             [
-                5,
+                6,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
                 2
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "SHEEP"
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "BRICK",
+                "BRICK",
+                "BRICK",
+                "BRICK",
+                "WHEAT"
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_CITY",
+            12
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WHEAT",
+                "ORE",
+                "WHEAT",
+                "WOOD",
+                "WOOD"
             ]
         ],
         [
@@ -4809,8 +9122,371 @@
             "RED",
             "ROLL",
             [
+                3,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
                 4,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "SHEEP",
+                "WHEAT",
+                "WOOD",
+                "SHEEP"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    0,
+                    2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
                 2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    2,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "ORE"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "SHEEP"
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "WHEAT"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WOOD",
+                "ORE",
+                "WOOD",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    2,
+                    -2,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "WOOD",
+                "WHEAT"
+            ]
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    0,
+                    2,
+                    -2
+                ],
+                "BLUE",
+                "SHEEP"
+            ]
+        ],
+        [
+            "RED",
+            "BUY_DEVELOPMENT_CARD",
+            "KNIGHT"
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    0,
+                    -2,
+                    2
+                ],
+                "RED",
+                "WOOD"
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "PLAY_KNIGHT_CARD",
+            null
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    -1,
+                    2,
+                    -1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                5
             ]
         ],
         [
@@ -4848,160 +9524,11 @@
             "RED",
             "ROLL",
             [
-                6,
-                4
-            ]
-        ],
-        [
-            "RED",
-            "BUILD_SETTLEMENT",
-            22
-        ],
-        [
-            "RED",
-            "END_TURN",
-            null
-        ],
-        [
-            "BLUE",
-            "ROLL",
-            [
                 2,
-                2
-            ]
-        ],
-        [
-            "BLUE",
-            "END_TURN",
-            null
-        ],
-        [
-            "RED",
-            "ROLL",
-            [
-                5,
-                6
-            ]
-        ],
-        [
-            "RED",
-            "END_TURN",
-            null
-        ],
-        [
-            "BLUE",
-            "ROLL",
-            [
-                1,
-                5
-            ]
-        ],
-        [
-            "BLUE",
-            "MARITIME_TRADE",
-            [
-                "WOOD",
-                "WOOD",
-                null,
-                null,
-                "BRICK"
-            ]
-        ],
-        [
-            "BLUE",
-            "END_TURN",
-            null
-        ],
-        [
-            "RED",
-            "ROLL",
-            [
-                5,
-                5
-            ]
-        ],
-        [
-            "RED",
-            "MARITIME_TRADE",
-            [
-                "ORE",
-                "ORE",
-                "ORE",
-                "ORE",
-                "WHEAT"
-            ]
-        ],
-        [
-            "RED",
-            "END_TURN",
-            null
-        ],
-        [
-            "BLUE",
-            "ROLL",
-            [
-                5,
-                6
-            ]
-        ],
-        [
-            "BLUE",
-            "END_TURN",
-            null
-        ],
-        [
-            "RED",
-            "ROLL",
-            [
-                5,
-                1
-            ]
-        ],
-        [
-            "RED",
-            "END_TURN",
-            null
-        ],
-        [
-            "BLUE",
-            "ROLL",
-            [
-                4,
                 4
             ]
         ],
         [
-            "BLUE",
-            "BUILD_ROAD",
-            [
-                31,
-                32
-            ]
-        ],
-        [
-            "BLUE",
-            "END_TURN",
-            null
-        ],
-        [
-            "RED",
-            "ROLL",
-            [
-                4,
-                1
-            ]
-        ],
-        [
-            "RED",
-            "BUILD_CITY",
-            22
-        ],
-        [
-            "RED",
-            "BUILD_SETTLEMENT",
-            17
-        ],
-        [
             "RED",
             "END_TURN",
             null
@@ -5011,144 +9538,79 @@
             "ROLL",
             [
                 1,
-                4
-            ]
-        ],
-        [
-            "BLUE",
-            "END_TURN",
-            null
-        ],
-        [
-            "RED",
-            "ROLL",
-            [
-                5,
-                5
-            ]
-        ],
-        [
-            "RED",
-            "MARITIME_TRADE",
-            [
-                "WOOD",
-                "WOOD",
-                "WOOD",
-                "WOOD",
-                "BRICK"
-            ]
-        ],
-        [
-            "RED",
-            "BUILD_ROAD",
-            [
-                20,
-                22
-            ]
-        ],
-        [
-            "RED",
-            "MARITIME_TRADE",
-            [
-                "WHEAT",
-                "WHEAT",
-                "WHEAT",
-                "WHEAT",
-                "BRICK"
-            ]
-        ],
-        [
-            "RED",
-            "END_TURN",
-            null
-        ],
-        [
-            "BLUE",
-            "ROLL",
-            [
-                1,
-                4
-            ]
-        ],
-        [
-            "BLUE",
-            "END_TURN",
-            null
-        ],
-        [
-            "RED",
-            "ROLL",
-            [
-                5,
-                6
-            ]
-        ],
-        [
-            "RED",
-            "BUILD_ROAD",
-            [
-                19,
-                20
-            ]
-        ],
-        [
-            "RED",
-            "MARITIME_TRADE",
-            [
-                "WHEAT",
-                "WHEAT",
-                "WHEAT",
-                "WHEAT",
-                "BRICK"
-            ]
-        ],
-        [
-            "RED",
-            "END_TURN",
-            null
-        ],
-        [
-            "BLUE",
-            "ROLL",
-            [
-                2,
                 6
             ]
         ],
         [
             "BLUE",
-            "END_TURN",
-            null
-        ],
-        [
-            "RED",
-            "ROLL",
-            [
-                1,
-                6
-            ]
-        ],
-        [
-            "RED",
             "DISCARD",
             [
+                "WHEAT",
                 "ORE",
-                "BRICK",
-                "BRICK",
-                "SHEEP",
-                "WHEAT"
+                "WHEAT",
+                "WOOD"
             ]
         ],
         [
-            "RED",
+            "BLUE",
             "MOVE_ROBBER",
             [
                 [
-                    2,
-                    -2,
-                    0
+                    1,
+                    0,
+                    -1
                 ],
-                "BLUE",
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "ORE",
+                "ORE",
+                "ORE",
+                "ORE",
                 "SHEEP"
             ]
         ],
@@ -5161,8 +9623,134 @@
             "BLUE",
             "ROLL",
             [
-                2,
+                1,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                5,
                 3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "WHEAT"
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "ORE"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                4,
+                5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                2
             ]
         ],
         [
@@ -5180,38 +9768,29 @@
         ],
         [
             "RED",
-            "BUILD_ROAD",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
             [
-                19,
-                21
+                5,
+                1
             ]
         ],
         [
-            "RED",
-            "MARITIME_TRADE",
-            [
-                "SHEEP",
-                "SHEEP",
-                "SHEEP",
-                "SHEEP",
-                "BRICK"
-            ]
+            "BLUE",
+            "END_TURN",
+            null
         ],
         [
             "RED",
-            "MARITIME_TRADE",
+            "ROLL",
             [
-                "WHEAT",
-                "WHEAT",
-                "WHEAT",
-                "WHEAT",
-                "WOOD"
+                3,
+                3
             ]
-        ],
-        [
-            "RED",
-            "BUILD_SETTLEMENT",
-            19
         ],
         [
             "RED",
@@ -5222,8 +9801,8 @@
             "BLUE",
             "ROLL",
             [
-                3,
-                5
+                2,
+                3
             ]
         ],
         [
@@ -5236,7 +9815,183 @@
             "ROLL",
             [
                 6,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                4,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                2
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
+                "SHEEP"
+            ]
+        ],
+        [
+            "RED",
+            "BUY_DEVELOPMENT_CARD",
+            "KNIGHT"
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "ORE"
+            ]
+        ],
+        [
+            "RED",
+            "PLAY_KNIGHT_CARD",
+            null
+        ],
+        [
+            "RED",
+            "MOVE_ROBBER",
+            [
+                [
+                    2,
+                    -2,
+                    0
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
                 5
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WOOD",
+                "WOOD",
+                "ORE",
+                "WOOD",
+                "ORE",
+                "WOOD",
+                "WOOD",
+                "WOOD"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    1,
+                    0,
+                    -1
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                2,
+                4
             ]
         ],
         [
@@ -5261,18 +10016,142 @@
             "RED",
             "ROLL",
             [
-                3,
-                4
+                5,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
+                6
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "WHEAT",
+                "ORE",
+                "ORE",
+                "ORE",
+                "WOOD",
+                "WOOD"
             ]
         ],
         [
             "RED",
             "DISCARD",
             [
-                "SHEEP",
-                "SHEEP",
-                "SHEEP",
-                "BRICK"
+                "WOOD",
+                "BRICK",
+                "BRICK",
+                "SHEEP"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    2,
+                    0
+                ],
+                "RED",
+                "ORE"
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
+                3
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "ORE",
+                "ORE",
+                "ORE",
+                "WOOD"
             ]
         ],
         [
@@ -5280,8 +10159,8 @@
             "MOVE_ROBBER",
             [
                 [
-                    0,
-                    0,
+                    1,
+                    -1,
                     0
                 ],
                 null,
@@ -5297,7 +10176,83 @@
             "BLUE",
             "ROLL",
             [
-                5,
+                6,
+                5
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "ORE",
+                "ORE",
+                "ORE",
+                "ORE",
+                "BRICK"
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    -2,
+                    2,
+                    0
+                ],
+                "RED",
+                "SHEEP"
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                1,
                 4
             ]
         ],
@@ -5310,19 +10265,32 @@
             "RED",
             "ROLL",
             [
-                2,
-                1
+                5,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "ORE",
+                "WOOD",
+                "ORE",
+                "ORE",
+                "WHEAT"
             ]
         ],
         [
             "RED",
-            "MARITIME_TRADE",
+            "MOVE_ROBBER",
             [
-                "SHEEP",
-                "SHEEP",
-                "SHEEP",
-                "SHEEP",
-                "WHEAT"
+                [
+                    -1,
+                    0,
+                    1
+                ],
+                null,
+                null
             ]
         ],
         [
@@ -5335,6 +10303,81 @@
             "ROLL",
             [
                 5,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                3,
+                6
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                3,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "DISCARD",
+            [
+                "SHEEP",
+                "WOOD",
+                "WHEAT",
+                "WOOD"
+            ]
+        ],
+        [
+            "BLUE",
+            "MOVE_ROBBER",
+            [
+                [
+                    2,
+                    0,
+                    -2
+                ],
+                null,
+                null
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                1,
+                1
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                6,
                 6
             ]
         ],
@@ -5347,49 +10390,125 @@
             "RED",
             "ROLL",
             [
-                4,
+                2,
                 3
             ]
         ],
         [
             "RED",
-            "MOVE_ROBBER",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
             [
-                [
-                    2,
-                    -2,
-                    0
-                ],
-                "BLUE",
+                1,
+                4
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "WOOD",
+                "WOOD",
+                null,
+                null,
                 "WHEAT"
             ]
         ],
         [
             "RED",
-            "BUILD_CITY",
-            17
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                2
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                5,
+                4
+            ]
+        ],
+        [
+            "RED",
+            "END_TURN",
+            null
+        ],
+        [
+            "BLUE",
+            "ROLL",
+            [
+                2,
+                1
+            ]
+        ],
+        [
+            "BLUE",
+            "END_TURN",
+            null
+        ],
+        [
+            "RED",
+            "ROLL",
+            [
+                6,
+                3
+            ]
+        ],
+        [
+            "RED",
+            "BUILD_SETTLEMENT",
+            2
         ]
     ],
     "player_state": {
-        "P0_VICTORY_POINTS": 10,
-        "P0_ROADS_AVAILABLE": 7,
-        "P0_SETTLEMENTS_AVAILABLE": 3,
-        "P0_CITIES_AVAILABLE": 1,
-        "P0_HAS_ROAD": true,
+        "P0_VICTORY_POINTS": 4,
+        "P0_ROADS_AVAILABLE": 13,
+        "P0_SETTLEMENTS_AVAILABLE": 5,
+        "P0_CITIES_AVAILABLE": 2,
+        "P0_HAS_ROAD": false,
         "P0_HAS_ARMY": false,
-        "P0_HAS_ROLLED": true,
+        "P0_HAS_ROLLED": false,
         "P0_HAS_PLAYED_DEVELOPMENT_CARD_IN_TURN": false,
-        "P0_ACTUAL_VICTORY_POINTS": 10,
-        "P0_LONGEST_ROAD_LENGTH": 5,
+        "P0_ACTUAL_VICTORY_POINTS": 4,
+        "P0_LONGEST_ROAD_LENGTH": 2,
         "P0_KNIGHT_OWNED_AT_START": false,
         "P0_MONOPOLY_OWNED_AT_START": false,
         "P0_YEAR_OF_PLENTY_OWNED_AT_START": false,
         "P0_ROAD_BUILDING_OWNED_AT_START": false,
-        "P0_WOOD_IN_HAND": 0,
-        "P0_BRICK_IN_HAND": 1,
-        "P0_SHEEP_IN_HAND": 0,
-        "P0_WHEAT_IN_HAND": 0,
-        "P0_ORE_IN_HAND": 1,
+        "P0_WOOD_IN_HAND": 3,
+        "P0_BRICK_IN_HAND": 0,
+        "P0_SHEEP_IN_HAND": 4,
+        "P0_WHEAT_IN_HAND": 5,
+        "P0_ORE_IN_HAND": 2,
         "P0_KNIGHT_IN_HAND": 0,
         "P0_PLAYED_KNIGHT": 0,
         "P0_YEAR_OF_PLENTY_IN_HAND": 0,
@@ -5400,49 +10519,49 @@
         "P0_PLAYED_ROAD_BUILDING": 0,
         "P0_VICTORY_POINT_IN_HAND": 0,
         "P0_PLAYED_VICTORY_POINT": 0,
-        "P1_VICTORY_POINTS": 2,
-        "P1_ROADS_AVAILABLE": 12,
-        "P1_SETTLEMENTS_AVAILABLE": 3,
-        "P1_CITIES_AVAILABLE": 4,
-        "P1_HAS_ROAD": false,
-        "P1_HAS_ARMY": false,
-        "P1_HAS_ROLLED": false,
+        "P1_VICTORY_POINTS": 9,
+        "P1_ROADS_AVAILABLE": 0,
+        "P1_SETTLEMENTS_AVAILABLE": 2,
+        "P1_CITIES_AVAILABLE": 3,
+        "P1_HAS_ROAD": true,
+        "P1_HAS_ARMY": true,
+        "P1_HAS_ROLLED": true,
         "P1_HAS_PLAYED_DEVELOPMENT_CARD_IN_TURN": false,
-        "P1_ACTUAL_VICTORY_POINTS": 2,
-        "P1_LONGEST_ROAD_LENGTH": 2,
+        "P1_ACTUAL_VICTORY_POINTS": 10,
+        "P1_LONGEST_ROAD_LENGTH": 7,
         "P1_KNIGHT_OWNED_AT_START": false,
         "P1_MONOPOLY_OWNED_AT_START": false,
         "P1_YEAR_OF_PLENTY_OWNED_AT_START": false,
         "P1_ROAD_BUILDING_OWNED_AT_START": false,
         "P1_WOOD_IN_HAND": 1,
-        "P1_BRICK_IN_HAND": 0,
-        "P1_SHEEP_IN_HAND": 2,
-        "P1_WHEAT_IN_HAND": 2,
+        "P1_BRICK_IN_HAND": 2,
+        "P1_SHEEP_IN_HAND": 4,
+        "P1_WHEAT_IN_HAND": 0,
         "P1_ORE_IN_HAND": 0,
         "P1_KNIGHT_IN_HAND": 0,
-        "P1_PLAYED_KNIGHT": 1,
+        "P1_PLAYED_KNIGHT": 4,
         "P1_YEAR_OF_PLENTY_IN_HAND": 0,
         "P1_PLAYED_YEAR_OF_PLENTY": 0,
         "P1_MONOPOLY_IN_HAND": 0,
         "P1_PLAYED_MONOPOLY": 0,
         "P1_ROAD_BUILDING_IN_HAND": 0,
-        "P1_PLAYED_ROAD_BUILDING": 0,
-        "P1_VICTORY_POINT_IN_HAND": 0,
+        "P1_PLAYED_ROAD_BUILDING": 1,
+        "P1_VICTORY_POINT_IN_HAND": 1,
         "P1_PLAYED_VICTORY_POINT": 0
     },
     "colors": [
-        "RED",
-        "BLUE"
+        "BLUE",
+        "RED"
     ],
     "bot_colors": [
-        "RED",
-        "BLUE"
+        "BLUE",
+        "RED"
     ],
     "is_initial_build_phase": false,
     "robber_coordinate": [
         2,
-        -2,
-        0
+        0,
+        -2
     ],
     "current_color": "RED",
     "current_prompt": "PLAY_TURN",
@@ -5451,11 +10570,55 @@
             "RED",
             "END_TURN",
             null
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "ORE"
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "BRICK"
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "WOOD"
+            ]
+        ],
+        [
+            "RED",
+            "MARITIME_TRADE",
+            [
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "SHEEP",
+                "WHEAT"
+            ]
         ]
     ],
     "longest_roads_by_player": {
-        "RED": 5,
-        "BLUE": 2
+        "BLUE": 2,
+        "RED": 7
     },
     "winning_color": "RED"
 }
